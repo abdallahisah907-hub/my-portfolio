@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abdullahi Isah | Agentic AI Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Abdullahi Isah, a modern web developer and AI-focused builder creating elegant digital experiences."
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="sets.js"></script>
+    
+  </head>
+  <body>
+    <header class="navbar">
+      
+      <h1 style="color: azure; font-size: 300; font-style: normal;">My porfolio</h1>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#services" class="nav-item">Services</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <aside class="profile-card" aria-label="Profile summary">
+          <figure class="image-group">
+            <img
+              src="IMG-20250903-WA0052.jpg"
+              alt="Portrait of Abdullahi Isah"
+            />
+          </figure>
+          <div class="profile-body">
+            <h2>Abdullahi Isah</h2>
+            <p>Creative technologist blending web design, coding, and AI-driven thinking.</p>
+            <ul>
+              <li>HTML • CSS • JavaScript</li>
+              <li>Frontend Design</li>
+              <li>AI Workflow Thinking</li>
+            </ul>
+          </div>
+
+        </aside>
+        <div class="hero-copy">
+          <p class="eyebrow"> • Web Developer • Problem Solver</p>
+          <h1 class ="my-head">Designing software systems that scale businessess and power ideas digitally.</h1>
+          <p class="lead">
+            I design modern digital experiences that help
+            brands automate decisions, improve engagement, and scale faster.
+          </p>
+
+          <div class="cta-row">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="#contact" class="btn btn-secondary">Let’s talk</a>
+          </div>
+
+          <div class="stats">
+            <div>
+              <strong>2+</strong>
+              <span>Years learning</span>
+            </div>
+            <div>
+              <strong>12+</strong>
+              <span>Projects built</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Creative focus</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About me</p>
+          <h2>I turn ideas into elegant, intelligent solutions.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <p>
+              I’m a passionate developer who enjoys building websites, interfaces,
+              and interactive experiences that make technology feel simple and useful.
+            </p>
+          </div>
+          <div class="about-card accent">
+            <p>
+              My work combines design thinking with technical execution, making sure
+              every product is visually strong and genuinely functional.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">What I do</p>
+          <h2>Services built for modern digital growth.</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="icon">01</span>
+            <h3>Web Design</h3>
+            <p>Clean, responsive interfaces tailored for brands, portfolios, and startups.</p>
+          </article>
+          <article class="service-card" id="services-card">
+            <span class="icon">02</span>
+            <h3>Frontend Development</h3>
+            <p>Interactive pages built with HTML, CSS, and JavaScript for smooth user experiences.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Featured work</p>
+          <h2>Recent projects and concepts.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-tag">Portfolio</div>
+            <h3>Personal Brand Website</h3>
+            <p>A premium personal portfolio with strong storytelling, visuals, and clear CTAs.</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Business</div>
+            <h3>Landing Page Design</h3>
+            <p>A modern marketing page designed to convert visitors and communicate value quickly.</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-tag">Medical</div>
+            <h3>Lab loop flow</h3>
+            <p>A prototype idea that automates the entire medical diagnostic pipelines from patience test execution to result delivery.            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contact-section" id="contact">
+      <div class="section-heading left">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something intelligent and memorable.</h2>
+      </div>
+
+      <form class="contact-form" action="#" method="get">
+        <div class="field-row">
+          <div class="form-group">
+            <label for="fname">First name</label>
+            <input id="fname" type="text" name="fname" placeholder="Enter your first name" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last name</label>
+            <input id="lname" type="text" name="lname" placeholder="Enter your surname" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn" onclick="myFun()">Send message</button>
+      </form>
+    </footer>
+    
+
+
+    
+  </body>
+</html>
