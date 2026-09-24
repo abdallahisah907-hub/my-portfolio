@@ -398,7 +398,7 @@ textarea {
   margin-top: 10px;
 }
 
-@media (max-width: 800px) {
+@media (width: 800px) {
   .hero,
   .about-grid,
   .services-grid,
