@@ -159,13 +159,14 @@ main,
   flex-wrap: wrap;
   gap: 26px;
   margin-top: 34px;
+  width:100px;
 }
 
 .stats div {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  min-width: 120px;
+  min-width: 95px;
 }
 
 .stats strong {
