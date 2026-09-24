@@ -1,6 +1,7 @@
 body{
   font-size: 16px;
   padding: 10px;
+  display:flex;
 }
 :root {
   --bg: #07111f;
