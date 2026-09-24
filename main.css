@@ -37,7 +37,7 @@ body {
 img {
   max-width: 100%;
   display: block;
-  width: 400px;
+  
 }
 
 a {
@@ -262,7 +262,7 @@ main,
   padding: 28px;
   line-height: 1.8;
   color: var(--muted);
-  width:100%;
+  width:50px;
   max-width:400px;
   display: flex;
   flex-wrap: wrap;         /* allows wrapping on small screens */
@@ -271,7 +271,7 @@ main,
 
 .about-card.accent {
   background: linear-gradient(135deg, rgba(110, 231, 249, 0.12), rgba(167, 139, 250, 0.16));
-  width:100%;
+  width:50%;
   max-width:400px;
   display: flex;
   flex-wrap: wrap;         /* allows wrapping on small screens */
