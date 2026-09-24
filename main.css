@@ -45,7 +45,7 @@ a {
 }
 
 .navbar {
-  width: min(1000px, calc(100% - 32px));
+  width: min(1120px, calc(100% - 32px));
   margin: 20px auto 0;
   padding: 18px 24px;
   background: rgba(15, 23, 42, 0.7);
@@ -85,7 +85,7 @@ a {
 
 main,
 .contact-section {
-  width: min(1120px, calc(100% - 32px));
+  width: min(1000px, calc(100% - 32px));
   margin: 0 auto;
 }
 
