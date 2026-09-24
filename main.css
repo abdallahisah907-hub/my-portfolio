@@ -456,6 +456,12 @@ display: flex;
   flex-wrap: wrap;         /* allows wrapping on small screens */
   gap: 1rem;
 }
+/* Mobile-first approach */
+@media (max-width: 768px) {
+  .nav-links { display: none; }  /* or make hamburger */
+  .hero h1 { font-size: 1.8rem; }
+  .projects { grid-template-columns: 1fr; }
+}
 
 
 
