@@ -159,7 +159,7 @@ main,
   flex-wrap: wrap;
   gap: 26px;
   margin-top: 34px;
-  width:100px;
+  width:100%;
 }
 
 .stats div {
