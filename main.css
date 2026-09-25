@@ -429,6 +429,7 @@ textarea {
 .about-card{
   background: linear-gradient(135deg, rgba(110, 231, 249, 0.12), rgba(167, 139, 250, 0.16));
   width: 100%;
+}
 
 #services-card{
  margin-left: 200px;
