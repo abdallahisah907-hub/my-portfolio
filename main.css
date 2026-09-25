@@ -436,12 +436,7 @@ textarea {
  padding: 15px;
 
 }
-/* Mobile-first approach */
-@media (max-width: 768px) {
-  .nav-links { display: none; }  /* or make hamburger */
-  .hero h1 { font-size: 1.8rem; }
-  .projects { grid-template-columns: 1fr; }
-}
+
 
 
 
