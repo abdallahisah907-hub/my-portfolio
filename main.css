@@ -386,7 +386,7 @@ textarea {
   margin-top: 10px;
 }
 
-@media (width: 800px) {
+@media (width: 768px) {
   .hero,
   .about-grid,
   .services-grid,
