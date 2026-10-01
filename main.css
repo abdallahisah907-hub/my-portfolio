@@ -194,6 +194,8 @@ main,
   display: flex;
   flex-wrap: wrap;         /* allows wrapping on small screens */
   gap: 1rem;
+  width:100%;
+  max-width:400px;
 }
 
 .image-group {
