@@ -245,6 +245,8 @@ main,
 
 .section-heading {
   margin-bottom: 28px;
+  width:100%;
+  max-width:400px;
 }
 
 .section-heading h2 {
