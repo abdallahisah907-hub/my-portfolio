@@ -131,8 +131,7 @@ main,
   flex-wrap: wrap;
   gap: 18px;
   margin-top: 28px;
-  width:100%;
-  max-width:400px;
+ 
 }
 
 .btn {
@@ -196,8 +195,7 @@ main,
   display: flex;
   flex-wrap: wrap;         /* allows wrapping on small screens */
   gap: 1rem;
-  width:100%;
-  max-width:400px;
+  
 }
 
 .image-group {
@@ -264,8 +262,7 @@ main,
 
 .about-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  width:100%;
-  max-width:400px;
+  
 }
 
 .about-card {
@@ -275,15 +272,13 @@ main,
   padding: 28px;
   line-height: 1.8;
   color: var(--muted);
-  width:100%;
-  max-width:400px;
+  
   
 }
 
 .about-card.accent {
   background: linear-gradient(135deg, rgba(110, 231, 249, 0.12), rgba(167, 139, 250, 0.16));
-    width:100%;
-  max-width:400px;
+    
 
 }
 
