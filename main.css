@@ -257,7 +257,7 @@ main,
 .projects-grid {
   display: grid;
   gap: 22px;
-  max-width:400px;
+ 
 }
 
 .about-grid {
@@ -400,7 +400,7 @@ textarea {
   margin-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 320px) {
   .navbar,
   .hero,
   .about-grid,
