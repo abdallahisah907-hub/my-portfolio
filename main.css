@@ -399,8 +399,7 @@ textarea {
   margin-top: 10px;
 }
 
-@media (min-width: 320px) {
-  .img,
+@media (min-width: 350px) {
   .image-group,
   .navbar,
   .hero,
