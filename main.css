@@ -257,6 +257,7 @@ main,
 .projects-grid {
   display: grid;
   gap: 22px;
+  max-width:400px;
 }
 
 .about-grid {
