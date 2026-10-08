@@ -399,7 +399,8 @@ textarea {
   margin-top: 10px;
 }
 
-@media (width: 768px) {
+@media (min-width: 768px) {
+  .navbar,
   .hero,
   .about-grid,
   .services-grid,
