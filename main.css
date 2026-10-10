@@ -210,7 +210,7 @@ main,
 .image-group img {
   width: 100%;
   object-fit: cover;
-  max-width:400px;
+  max-width:360px;
 }
 
 .profile-body {
@@ -274,7 +274,7 @@ main,
   padding: 28px;
   line-height: 1.8;
   color: var(--muted);
-  width:500px;
+  max-width: 400px;
   
   
 }
