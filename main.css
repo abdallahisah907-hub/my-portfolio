@@ -38,6 +38,7 @@ body {
 img {
   width:100%
   display: block;
+  max-width:400px;
   
 }
 
@@ -236,6 +237,7 @@ main,
   padding-left: 30px
   width: min(1120px, calc(100% - 32px));
   
+  
 }
 
 .section-heading {
@@ -399,7 +401,7 @@ textarea {
   margin-top: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .image-group,
   .navbar,
   .hero,
@@ -445,6 +447,7 @@ textarea {
 .about-card{
   background: linear-gradient(135deg, rgba(110, 231, 249, 0.12), rgba(167, 139, 250, 0.16));
   width: 100%;
+  max-width:400px;
 }
 
 
