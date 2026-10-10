@@ -234,14 +234,14 @@ main,
 .section {
   margin: 100px;
   padding-left: 30px
-  width:100%;
   max-width:400px;
+  
 }
 
 .section-heading {
   margin-bottom: 28px;
   max-width:400px;
-  width:100%;
+ 
 }
 
 .section-heading h2 {
