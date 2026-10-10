@@ -38,6 +38,7 @@ body {
 img {
   width:100%
   display: block;
+  max-width:400px;
 
   
 }
@@ -209,6 +210,7 @@ main,
 .image-group img {
   width: 100%;
   object-fit: cover;
+  max-width:400px;
 }
 
 .profile-body {
@@ -235,14 +237,14 @@ main,
 .section {
   margin: 100px;
   padding-left: 30px
-  width: min(1120px, calc(100% - 32px));
+
   
   
 }
 
 .section-heading {
   margin-bottom: 28px;
-  width: min(1120px, calc(100% - 32px));
+  
  
 }
 
@@ -430,7 +432,7 @@ textarea {
   }
 
   .image-group img {
-    height: 320px;
+    height: 300px;
   }
 
   img{
