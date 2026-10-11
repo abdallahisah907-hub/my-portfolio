@@ -408,7 +408,7 @@ textarea {
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .image-group,
   .navbar,
   .hero,
