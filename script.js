@@ -3,13 +3,11 @@ let lname = document.getElementById('lname');
 let email = document.getElementById('email');
 function myFun() {
     if(fname !== null && lname != null && email !== null) {
-        let text = "";
-        text +=  window.alert("Thanks for reaching out to Abdullahi");
+          window.alert("Thanks for reaching out to Abdullahi");
     }
     else{
-        text += "Fill out your informations";
+        console.log("enter your details")
     }
-    document.getElementById('demo').innerHTML = text;
     
 }
 
