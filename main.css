@@ -435,7 +435,7 @@ textarea {
   }
 
   .image-group img {
-    height: 300px;
+    height: auto;
   }
 
   img{
