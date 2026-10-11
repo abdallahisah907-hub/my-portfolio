@@ -1,4 +1,4 @@
-/* ---------- BASE ---------- */
+
 :root {
   --bg: #07111f;
   --bg-soft: #0d1829;
@@ -28,10 +28,9 @@ body {
     radial-gradient(circle at top left, rgba(59, 130, 246, 0.25), transparent 25%),
     linear-gradient(135deg, var(--bg), #111827 50%, var(--bg-soft));
   color: var(--text);
-  overflow-x: hidden;   /* prevents accidental horizontal scroll */
+  overflow-x: hidden;   
 }
 
-/* ---------- IMAGES ---------- */
 img {
   display: block;
   width: 100%;
@@ -39,7 +38,6 @@ img {
   height: 100%;
 }
 
-/* ---------- NAVBAR ---------- */
 .navbar {
   width: calc(100% - 32px);
   max-width: 1120px;
@@ -79,7 +77,6 @@ img {
   color: var(--primary);
 }
 
-/* ---------- LAYOUT WRAPPERS ---------- */
 main,
 .contact-section {
   width: calc(100% - 32px);
@@ -87,7 +84,6 @@ main,
   margin: 0 auto;
 }
 
-/* ---------- HERO ---------- */
 .hero {
   display: grid;
   grid-template-columns: 1.3fr 0.9fr;
@@ -153,7 +149,6 @@ main,
   background: rgba(15, 23, 42, 0.3);
 }
 
-/* ---------- STATS ---------- */
 .stats {
   display: flex;
   flex-wrap: wrap;
@@ -179,7 +174,6 @@ main,
   font-size: 0.85rem;
 }
 
-/* ---------- PROFILE CARD ---------- */
 .profile-card {
   background: rgba(15, 23, 42, 0.72);
   border: 1px solid rgba(148, 163, 184, 0.2);
@@ -189,7 +183,6 @@ main,
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  /* removed margin-right: 100px — it broke mobile */
 }
 
 .image-group {
@@ -226,9 +219,8 @@ main,
   line-height: 2;
 }
 
-/* ---------- SECTIONS ---------- */
+
 .section {
-  /* was margin: 100px + padding-left: 30px — replaced with sane spacing */
   margin: 80px 0;
   padding-left: 0;
 }
@@ -243,7 +235,6 @@ main,
   max-width: 400px;
 }
 
-/* ---------- GRIDS ---------- */
 .about-grid,
 .services-grid,
 .projects-grid {
@@ -253,7 +244,6 @@ main,
 
 .about-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  /* removed width: 100px — that was forcing the grid tiny */
 }
 
 .about-card {
@@ -267,7 +257,6 @@ main,
 
 .about-card.accent {
   background: linear-gradient(135deg, rgba(110, 231, 249, 0.12), rgba(167, 139, 250, 0.16));
-  /* removed width/max-width — let the grid handle sizing */
 }
 
 .services-grid {
@@ -326,7 +315,6 @@ main,
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-/* ---------- CONTACT ---------- */
 .contact-section {
   padding: 70px 0 90px;
 }
@@ -390,7 +378,6 @@ textarea {
   font-size: 30px;
 }
 
-/* ---------- TABLET (≤ 900px) ---------- */
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -408,7 +395,6 @@ textarea {
   }
 }
 
-/* ---------- MOBILE (≤ 600px) ---------- */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
