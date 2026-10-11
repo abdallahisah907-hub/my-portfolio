@@ -1,9 +1,4 @@
-body{
-  font-size: 16px;
-  padding: 15px;
-  
-  
-}
+/* ---------- BASE ---------- */
 :root {
   --bg: #07111f;
   --bg-soft: #0d1829;
@@ -28,27 +23,26 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   background:
     radial-gradient(circle at top left, rgba(59, 130, 246, 0.25), transparent 25%),
     linear-gradient(135deg, var(--bg), #111827 50%, var(--bg-soft));
   color: var(--text);
-  
+  overflow-x: hidden;   /* prevents accidental horizontal scroll */
 }
 
+/* ---------- IMAGES ---------- */
 img {
-  width:75%
   display: block;
-  max-width:400px;
-
-  
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
+/* ---------- NAVBAR ---------- */
 .navbar {
-  width: min(3500px, calc(100% - 32px));
+  width: calc(100% - 32px);
+  max-width: 1120px;
   margin: 20px auto 0;
   padding: 18px 24px;
   background: rgba(15, 23, 42, 0.7);
@@ -62,10 +56,7 @@ a {
   position: relative;
   top: 12px;
   z-index: 10;
-
 }
-
-
 
 .nav-logo span {
   color: var(--primary);
@@ -75,6 +66,7 @@ a {
   display: flex;
   align-items: center;
   gap: 28px;
+  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -87,13 +79,15 @@ a {
   color: var(--primary);
 }
 
+/* ---------- LAYOUT WRAPPERS ---------- */
 main,
 .contact-section {
-  width: min(1120px, calc(100% - 32px));
+  width: calc(100% - 32px);
+  max-width: 1120px;
   margin: 0 auto;
-  
 }
 
+/* ---------- HERO ---------- */
 .hero {
   display: grid;
   grid-template-columns: 1.3fr 0.9fr;
@@ -113,7 +107,7 @@ main,
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(2.7rem, 5vw, 5rem);
+  font-size: clamp(2.2rem, 5vw, 5rem);
   line-height: 1.05;
   font-weight: 800;
 }
@@ -131,7 +125,6 @@ main,
   flex-wrap: wrap;
   gap: 18px;
   margin-top: 28px;
- 
 }
 
 .btn {
@@ -160,12 +153,13 @@ main,
   background: rgba(15, 23, 42, 0.3);
 }
 
+/* ---------- STATS ---------- */
 .stats {
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
   margin-top: 34px;
-  width:100%;
+  width: 100%;
 }
 
 .stats div {
@@ -185,33 +179,30 @@ main,
   font-size: 0.85rem;
 }
 
+/* ---------- PROFILE CARD ---------- */
 .profile-card {
   background: rgba(15, 23, 42, 0.72);
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 28px;
   padding: 20px;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
-  margin-right: 100px;
   display: flex;
-  flex-wrap: wrap;         /* allows wrapping on small screens */
+  flex-wrap: wrap;
   gap: 1rem;
-  
+  /* removed margin-right: 100px — it broke mobile */
 }
 
 .image-group {
-  width:100%;
+  width: 100%;
   margin: 0;
   border-radius: 22px;
   overflow: hidden;
-
-  
-  
 }
 
 .image-group img {
   width: 100%;
+  height: auto;
   object-fit: cover;
-  max-width:500px;
 }
 
 .profile-body {
@@ -235,39 +226,34 @@ main,
   line-height: 2;
 }
 
+/* ---------- SECTIONS ---------- */
 .section {
-  margin: 100px;
-  padding-left: 30px
-
-  
-  
+  /* was margin: 100px + padding-left: 30px — replaced with sane spacing */
+  margin: 80px 0;
+  padding-left: 0;
 }
 
 .section-heading {
   margin-bottom: 28px;
-  
- 
 }
 
 .section-heading h2 {
   margin: 0;
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.6rem, 3vw, 3rem);
   max-width: 400px;
 }
 
+/* ---------- GRIDS ---------- */
 .about-grid,
 .services-grid,
 .projects-grid {
   display: grid;
   gap: 22px;
- 
 }
 
 .about-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  max-width:1100px;
-  width:100px;
-  
+  /* removed width: 100px — that was forcing the grid tiny */
 }
 
 .about-card {
@@ -277,17 +263,11 @@ main,
   padding: 28px;
   line-height: 1.8;
   color: var(--muted);
-  max-width: 1100px;
-  
-  
 }
 
 .about-card.accent {
   background: linear-gradient(135deg, rgba(110, 231, 249, 0.12), rgba(167, 139, 250, 0.16));
-  width:100%;
-  max-width:500px
-    
-
+  /* removed width/max-width — let the grid handle sizing */
 }
 
 .services-grid {
@@ -301,7 +281,6 @@ main,
   border-radius: 20px;
   padding: 26px 22px;
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.2);
-  
 }
 
 .icon {
@@ -321,7 +300,6 @@ main,
 .project-card h3 {
   margin: 0 0 10px;
   font-size: 1.4rem;
- 
 }
 
 .service-card p,
@@ -348,6 +326,7 @@ main,
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+/* ---------- CONTACT ---------- */
 .contact-section {
   padding: 70px 0 90px;
 }
@@ -371,7 +350,6 @@ main,
 
 .form-group {
   display: block;
-  flex-direction: row;
   gap: 10px;
   margin-bottom: 18px;
 }
@@ -408,60 +386,93 @@ textarea {
   margin-top: 10px;
 }
 
-@media (max-width: 500px) {
-  .image-group,
-  .navbar,
-  .hero,
+.my-head {
+  font-size: 30px;
+}
+
+/* ---------- TABLET (≤ 900px) ---------- */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 56px 0 24px;
+  }
+
+  .services-grid,
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section {
+    margin: 60px 0;
+  }
+}
+
+/* ---------- MOBILE (≤ 600px) ---------- */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 18px;
+    width: calc(100% - 24px);
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 40px 0 20px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .stats {
+    gap: 18px;
+  }
+
+  .stats strong {
+    font-size: 1.6rem;
+  }
+
   .about-grid,
   .services-grid,
   .projects-grid,
   .field-row {
     grid-template-columns: 1fr;
-    flex-direction:column;
   }
 
-  .navbar {
-    flex-direction: column;
-    gap: 18px;
+  .section {
+    margin: 40px 0;
   }
 
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
+  .section-heading h2 {
+    max-width: 100%;
   }
 
-  .hero {
-    padding-top: 44px;
-   
-    
+  .contact-form {
+    padding: 20px;
   }
 
-  .image-group img {
-    height: auto;
-  }
-
-  img{
-    object-fit: cover;
-    padding: 100px;
+  .about-card,
+  .service-card,
+  .project-card {
+    padding: 22px 18px;
   }
 }
-
-.my-head{
-  font-size:30px;  
-  
-}
-
-.about-card{
-  background: linear-gradient(135deg, rgba(110, 231, 249, 0.12), rgba(167, 139, 250, 0.16));
-  width: 100%;
-  max-width:500px;
-}
-
-
-
-
-
-
-
-
-
