@@ -11,6 +11,22 @@
   --accent: #a78bfa;
   --shadow: rgba(15, 23, 42, 0.35);
 }
+  .nav-items {
+    display: none;               /* hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #222;
+    padding: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;               /* shown when toggled */
+  }
+}
+
 
 * {
   box-sizing: border-box;
