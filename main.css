@@ -146,12 +146,14 @@ main,
   background: linear-gradient(135deg, var(--primary), var(--primary-strong));
   color: #03111d;
   box-shadow: 0 16px 24px rgba(59, 130, 246, 0.35);
+  text-decoration:none;
 }
 
 .btn-secondary {
   border: 1px solid rgba(110, 231, 249, 0.4);
   color: var(--text);
   background: rgba(15, 23, 42, 0.3);
+  text-decoration:none;
 }
 
 .stats {
