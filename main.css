@@ -66,14 +66,14 @@ img {
   align-items: center;
   gap: 28px;
   flex-wrap: wrap;
-  decoration:none;
+
 }
 
 .nav-item {
   color: var(--muted);
   font-size: 0.95rem;
   transition: color 0.2s ease;
-  decoration:none;
+  text-decoration:none;
 }
 
 .nav-item:hover {
