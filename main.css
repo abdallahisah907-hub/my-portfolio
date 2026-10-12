@@ -19,7 +19,7 @@
   
 }
 
-.menu-toggle {
+.menu-toggle, {
   display: none;
   background: none;
   border: none;
@@ -27,12 +27,13 @@
   font-size: 1.5rem;
   cursor: pointer;
   position:relative;
+  justify-content:space-between
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .menu-toggle {
-    display: block;
+    display: flex;
   }
 }
 
@@ -107,6 +108,7 @@ img {
   gap: 28px;
   flex-wrap: wrap;
   text-decoration:none;
+  box-shadow: 0 14px 30px var(--shadow);
 
 }
 
