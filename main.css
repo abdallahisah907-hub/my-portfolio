@@ -260,6 +260,7 @@ main,
   padding: 28px;
   line-height: 1.8;
   color: var(--muted);
+  background: linear-gradient(135deg, rgba(110, 231, 249, 0.12), rgba(167, 139, 250, 0.16));
 }
 
 .about-card.accent {
