@@ -430,10 +430,12 @@ textarea {
   .cta-row {
     flex-direction: column;
     align-items: stretch;
+    text-decoration:none;
   }
 
   .btn {
     width: 100%;
+    text-decoration:none;
   }
 
   .stats {
