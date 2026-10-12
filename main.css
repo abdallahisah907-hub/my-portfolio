@@ -32,6 +32,7 @@
   .menu-toggle {
     display: block;
   }
+}
 
   .nav-links {
     display: none;               /* hidden by default */
@@ -132,6 +133,7 @@ img {
   .menu-toggle {
     display: block;
   }
+}
 
 .nav-item:hover {
   color: var(--primary);
@@ -448,6 +450,7 @@ textarea {
     gap: 32px;
     padding: 56px 0 24px;
   }
+}
 
   .services-grid,
   .projects-grid {
@@ -466,6 +469,7 @@ textarea {
     padding: 16px 18px;
     width: calc(100% - 24px);
   }
+}
 
   .nav-links {
     justify-content: center;
