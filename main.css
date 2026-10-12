@@ -89,6 +89,15 @@
     .nav-links .nav-item:hover {
         background: rgba(110, 231, 249, 0.1);
     }
+ .nav-links .nav-item {
+        padding: 14px 12px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .nav-links .nav-item:hover {
+        background: rgba(110, 231, 249, 0.1);
+    }
 
 * {
   box-sizing: border-box;
