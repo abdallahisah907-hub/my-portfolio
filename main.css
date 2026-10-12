@@ -54,7 +54,7 @@ img {
   position: relative;
   top: 12px;
   z-index: 10;
-  decoration:none;
+  
 }
 
 .nav-logo span {
@@ -66,6 +66,7 @@ img {
   align-items: center;
   gap: 28px;
   flex-wrap: wrap;
+  decoration:none;
 }
 
 .nav-item {
