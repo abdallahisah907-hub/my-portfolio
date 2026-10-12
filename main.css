@@ -464,7 +464,7 @@ textarea {
     flex-direction: column;
     gap: 14px;
     padding: 16px 18px;
-    width: calc(70% - 24px);
+    width: calc(50% - 24px);
   }
 }
 
