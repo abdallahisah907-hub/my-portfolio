@@ -441,7 +441,7 @@ textarea {
   font-size: 30px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .hero {
     grid-template-columns: 1fr;
     gap: 32px;
