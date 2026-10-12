@@ -125,6 +125,7 @@ main,
   flex-wrap: wrap;
   gap: 18px;
   margin-top: 28px;
+  text-decoration:none;
 }
 
 .btn {
