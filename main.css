@@ -98,6 +98,29 @@
     .nav-links .nav-item:hover {
         background: rgba(110, 231, 249, 0.1);
     }
+ .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 18px;
+        padding: 12px;
+        margin-top: 10px;
+        box-shadow: 0 14px 30px var(--shadow);
+        z-index: 15;
+    }
+
+    .nav-links.open { display: flex; }
+
+    .nav-links .nav-item { padding: 14px 12px; border-radius: 10px; text-align: center; }
+    .nav-links .nav-item:hover { background: rgba(110, 231, 249, 0.1); }
+}
 
 * {
   box-sizing: border-box;
