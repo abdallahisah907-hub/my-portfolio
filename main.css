@@ -55,10 +55,6 @@
   .menu-toggle {
     display: flex;
   }
-  @media (max-width: 600px) {
-  .nav-links {
-    justify-content:center;
-  }
 
   .nav-links {
     display: none;               /* hidden by default */
@@ -69,6 +65,10 @@
     right: 0;
     background: #222;
     padding: 1rem;
+  }
+  @media (max-width: 600px) {
+  .nav-links {
+    justify-content:center;
   }
 
   .nav-links.open {
