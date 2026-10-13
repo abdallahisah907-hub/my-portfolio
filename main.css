@@ -15,55 +15,56 @@
 
 
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background: #222;
-  color: white;
-  position: relative;
-  
-}
-
- .nav-links {
-    display: none;               /* hidden by default */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background: #222;
-    padding: 1rem;
-  }
-
-
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-}
-
-.menu-toggle {
+.nav-toggle {
   display: none;
+  flex-direction: column;
+  gap: 5px;
   background: none;
   border: none;
-  color: white;
-  font-size: 1.5rem;
   cursor: pointer;
-  
+  padding: 8px;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 3px;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 600px) {
   .menu-toggle {
-    display: flex;
+    display: flex;         /* show the button */
   }
-  @media (max-width: 600px) {
+
+  .nav-links {
+    display: none;         /* hide the links initially */
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 18px;
+    padding: 12px;
+    gap: 4px;
+    z-index: 20;
+  }
+
   .nav-links.open {
-    display:flex;
+    display: flex;         /* ← THE KEY LINE */
+  }
+
+  .nav-links .nav-item {
+    padding: 14px;
+    text-align: center;
+    border-radius: 10px;
   }
 }
+
 
 
 
