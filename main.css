@@ -250,7 +250,7 @@ main,
 }
 
 .image-group {
-  width: 100%;
+  width: 70%;
   margin: 0;
   border-radius: 22px;
   overflow: hidden;
@@ -258,7 +258,7 @@ main,
 
 .image-group img {
   width: 100%;
-  height: auto;
+  height: 75%;
   object-fit: cover;
 }
 
