@@ -151,7 +151,7 @@ main,
   gap: 40px;
   align-items: center;
   padding: 72px 10px 36px;
-  margin-top:10px;
+  
   
 }
 
@@ -169,6 +169,7 @@ main,
   font-size: clamp(2.2rem, 5vw, 5rem);
   line-height: 1.05;
   font-weight: 800;
+  object-fit:cover;
 }
 
 .lead {
@@ -485,6 +486,8 @@ textarea {
 
   .hero-copy h1 {
     font-size: clamp(2rem, 9vw, 2.6rem);
+    margin: 0;
+    object-fit:cover;
   }
 
   .lead {
