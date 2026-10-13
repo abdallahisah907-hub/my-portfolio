@@ -69,10 +69,6 @@
 }
 
 
-
-/* Mobile */
-
-
 * {
   box-sizing: border-box;
 }
@@ -103,31 +99,7 @@ img {
   color: var(--primary);
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  flex-wrap: wrap;
-  text-decoration:none;
-  box-shadow: 0 14px 30px var(--shadow);
 
-}
-
-.nav-links {
-  color: var(--muted);
-  font-size: 1.5rem;
-  transition: color 0.2s ease;
-  text-decoration:none;
-  display:flex;
-  gap:1.5rem;
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-
-/* Mobile */
-}
 
 .nav-item:hover {
   color: var(--primary);
