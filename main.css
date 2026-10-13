@@ -69,6 +69,7 @@
 }
 
 
+
 * {
   box-sizing: border-box;
 }
@@ -430,16 +431,6 @@ textarea {
   .section {
     margin: 60px 0;
   }
-
-
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    gap: 14px;
-    padding: 16px 18px;
-    width: calc(50% - 24px);
-  }
-}
 
   .nav-links {
     justify-content: center;
