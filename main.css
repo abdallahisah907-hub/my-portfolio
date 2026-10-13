@@ -22,6 +22,8 @@
   padding: 1rem;
   background: #222;
   color: white;
+  position: relative;
+  
 }
 
 .nav-links {
@@ -44,7 +46,7 @@
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  position: relative;
+  
 }
 
 /* Mobile */
