@@ -38,7 +38,7 @@
 }
 
 .menu-toggle {
-  
+  display: none;
   background: none;
   border: none;
   color: white;
