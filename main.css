@@ -40,6 +40,20 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+.nav-links.open {
+        display: flex;              /* shown when JS adds .open */
+    }
+
+    .nav-links .nav-item {
+        padding: 14px 12px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .nav-links .nav-item:hover {
+        background: rgba(110, 231, 249, 0.1);
+    }
+
 /* Turn the burger into an X when open */
 .nav-toggle.open span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
