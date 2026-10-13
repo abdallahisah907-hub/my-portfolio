@@ -150,8 +150,8 @@ main,
   grid-template-columns: 1.3fr 0.9fr;
   gap: 40px;
   align-items: center;
-  padding: 72px 0 36px;
-  margin:30px;
+  padding: 72px 10px 36px;
+  
 }
 
 .eyebrow {
