@@ -63,10 +63,6 @@
   .nav-links.open {
     display:flex;
   }
-
-  .nav-links.open {
-    display: flex;               /* shown when toggled */
-  }
 }
 
 
