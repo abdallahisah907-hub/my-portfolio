@@ -42,14 +42,6 @@
   z-index: 20;                      /* above the dropdown */
 }
 
-.menu-toggle span {
-  display: block;
-  width: 26px;
-  height: 3px;
-  background: var(--primary);
-  border-radius: 3px;
-}
-
 /* ─────────── 3. NAV LINKS (menu panel) ─────────── */
 .nav-links {
   display: flex;                    /* desktop: inline row */
