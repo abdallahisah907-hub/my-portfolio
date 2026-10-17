@@ -41,7 +41,7 @@
 
 
 .menu-toggle{
-  display: none;
+  display: block;
   flex-direction: column;
   background-color: none;
   border: none;
