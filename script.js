@@ -12,8 +12,8 @@ function myFun() {
 }
 
 // 1. Grab the elements
-const toggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+const toggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
 
 toggle.addEventListener('click', () => {
   const isOpen = navLinks.classList.toggle('open');
