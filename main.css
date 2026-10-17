@@ -25,7 +25,7 @@
 .nav-links {
   display: flex;
   gap: 1.5rem;
-  bacground-color:aliceblue;
+  
 }
 
 .nav-item {
@@ -77,7 +77,8 @@
 
   /* Open state (JS toggles this class) */
   .nav-links.open {
-    max-height: 200px;         /* enough for all links */
+    height:100px;
+    max-height: 500px;         /* enough for all links */
     padding: 0.5rem 0;
   }
 
