@@ -12,7 +12,11 @@
   --shadow: rgba(15, 23, 42, 0.35);
 }
 
-
+.navbar{
+  display:flex;
+  padding:40px;
+  background-color: black;
+}
 
 
 .menu-toggle{
