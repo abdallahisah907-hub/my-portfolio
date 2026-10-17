@@ -29,7 +29,6 @@
   display: block;
   width: 26px;
   height: 3px;
-  background: var(--primary);
   border-radius: 3px;
 }
 
