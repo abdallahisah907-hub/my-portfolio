@@ -19,7 +19,7 @@
   display: none;
   flex-direction: column;
   gap: 5px;
-  background: none;
+  background-color: none;
   border: none;
   cursor: pointer;
   padding: 20px;
