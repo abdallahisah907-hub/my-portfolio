@@ -55,6 +55,7 @@
   display: flex;                    /* desktop: inline row */
   align-items: center;
   gap: 28px;
+  text-decoration:none;
 }
 
 /* ─────────── 4. NAV ITEMS (individual links) ─────────── */
@@ -70,11 +71,6 @@
 
 /* ─────────── 5. MOBILE: toggle + hidden menu ─────────── */
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: row;            /* keep the row: logo | burger */
-    justify-content: space-between;
-  }
-
   .menu-toggle {
     display: flex;                  /* show the button */
   }
@@ -96,17 +92,6 @@
 
   .nav-links.open {
     display: flex;                  /* ← THE KEY LINE */
-  }
-
-  /* mobile-specific link styling */
-  .nav-item {
-    padding: 14px;
-    text-align: center;
-    border-radius: 10px;
-  }
-
-  .nav-item:hover {
-    background: rgba(110, 231, 249, 0.1);
   }
 }
 
