@@ -77,8 +77,10 @@
 
   /* Open state (JS toggles this class) */
   .nav-links.open {
-    height:auto;       /* enough for all links */
+    max-height:500px;       /* enough for all links */
     padding: 0.5rem 0;
+    width:100%;
+    max-width:400px;
   }
 
   .nav-item {
