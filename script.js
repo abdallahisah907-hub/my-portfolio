@@ -13,7 +13,7 @@ function myFun() {
 
 // 1. Grab the elements
 const toggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('navLinks');
+const navLinks = document.getElementById('nav-links');
 
 toggle.addEventListener('click', () => {
   const isOpen = navLinks.classList.toggle('open');
