@@ -9,10 +9,5 @@ toggle.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', isOpen);
 });
 
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  });
-});
+
 
