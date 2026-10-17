@@ -22,13 +22,11 @@
   background-color: none;
   border: none;
   cursor: pointer;
-  padding: 20px;
+  
 }
 
 .menu-toggle {
   display: block;
-  width: 26px;
-  height: 3px;
   border-radius: 3px;
 }
 
