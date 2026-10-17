@@ -14,8 +14,9 @@
 
 .navbar{
   display:flex;
-  padding:40px;
-  background-color: black;
+  padding:20px;
+  top: 60px;
+  
 }
 
 
