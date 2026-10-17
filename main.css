@@ -44,31 +44,7 @@
 
 /* ─────────── 3. NAV LINKS (menu panel) ─────────── */
 .nav-links {
-  display: flex;                    /* desktop: inline row */
-  align-items: center;
-  gap: 28px;
-  text-decoration:none;
-}
-
-/* ─────────── 4. NAV ITEMS (individual links) ─────────── */
-.nav-item {
-  color: var(--muted);
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.nav-item:hover {
-  color: var(--primary);
-}
-
-/* ─────────── 5. MOBILE: toggle + hidden menu ─────────── */
-@media (max-width: 600px) {
-  .menu-toggle {
-    display: flex;                  /* show the button */
-  }
-
-  .nav-links {
-    display: none;                  /* hidden by default */
+display: none;                  /* hidden by default */
     position: absolute;
     top: calc(100% + 8px);
     left: 0;
@@ -80,6 +56,14 @@
     border-radius: 18px;
     padding: 12px;
     z-index: 15;
+}
+
+/* ─────────── 4. NAV ITEMS (individual links) ─────────── *
+
+/* ─────────── 5. MOBILE: toggle + hidden menu ─────────── */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: flex;                  /* show the button */
   }
 
   .nav-links.open {
