@@ -64,16 +64,19 @@
     display: block;
   }
 
+  @media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
   .nav-links.open {
     display: flex;               /* shown when toggled */
   }
 }
-
-@media (max-width: 900px) {
-  .menu-toggle {
-    display: block;
-  }
 }
+
+
+
 
 
 
