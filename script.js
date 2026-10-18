@@ -1,6 +1,7 @@
 let button = document.querySelector('#sendMessageBtn');
 
-button.addEventListener('click', function() {
+
+button.addEventListener('click', function myFun() {
 Swal.fire({
   position: "top-center",
   icon: "success",
