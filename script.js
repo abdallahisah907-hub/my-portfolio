@@ -1,6 +1,6 @@
 let button = document.getElementById('sendMessageBtn');
 
-  button.addEventListener('click', function {
+  button.addEventListener('click', function() {
         Swal.fire({
       title: "Message Sent!",
       text: "Abdullahi have recieved your message",
