@@ -155,8 +155,8 @@ main,
   gap: 40px;
   align-items: center;
   padding: 60px 0 36px;
-  width:80%;
-  max-width:400px;
+  width:100%;
+  
   
   
 }
@@ -257,6 +257,8 @@ main,
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  width:80%;
+  max-width:400px;
 }
 
 .image-group {
