@@ -2,11 +2,9 @@ let button = document.querySelector('#sendMessageBtn');
 
 button.addEventListener('click', function() {
   Swal.fire({
-  position: "top-end",
+  title: "Success!",
   icon: "success",
-  title: "Your work has been saved",
-  showConfirmButton: false,
-  timer: 1500
+  draggable: true
 });
   
 });
