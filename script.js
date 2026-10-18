@@ -1,10 +1,12 @@
 let button = document.querySelector('#sendMessageBtn');
 
 button.addEventListener('click', function() {
-  Swal.fire({
-  title: "Success!",
+Swal.fire({
+  position: "top-center",
   icon: "success",
-  draggable: true
+  title: "Thanks for reaching out to Abdullahi",
+  showConfirmButton: false,
+  timer: 2000
 });
   
 });
