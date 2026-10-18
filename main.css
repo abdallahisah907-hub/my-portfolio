@@ -68,7 +68,8 @@
     gap: 0;
     background: #111;
     padding: 0;
-    max-height: 0;             /* collapsed */
+    max-height: 0; 
+    width: 300px;/* collapsed */
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
