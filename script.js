@@ -1,5 +1,5 @@
-document.getElementById('sub').onclick = function sendMsg() {
-  alert('Thanks for reaching out to Abdullahi');
+function sendMsg() {
+  window.alert('Your message has been recorded')
 }
 
 // 1. Grab the elements
