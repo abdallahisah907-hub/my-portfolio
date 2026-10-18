@@ -1,4 +1,6 @@
-
+document.getElementById('demo').onclick = function sendMsg() {
+  window.alert('Thanks for reaching out to Abdullahi');
+}
 
 // 1. Grab the elements
 const toggle = document.querySelector('.menu-toggle');
