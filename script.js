@@ -1,14 +1,14 @@
+let button = document.getElementById('sendMessageBtn');
 
-
-  document.getElementById('sendMessageBtn').addEventListener('click', function() {
-    // Your provided code, slightly adapted for a success message
-    Swal.fire({
+  button.addEventListener('click', function {
+        Swal.fire({
       title: "Message Sent!",
       text: "Abdullahi have recieved your message",
       icon: "success",
       draggable: true // Keeps your draggable feature
     });
-  });
+  })
+    // Your provided code, slightly adapted for a success message
 
 
 
