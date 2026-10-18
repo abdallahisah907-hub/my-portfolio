@@ -271,12 +271,12 @@ main,
 
 .image-group img {
   max-width:400px;
-  width: 70%;
+  width: 100%;
   object-fit: cover;
 }
 
 .profile-body {
-  padding: 20px 8px 8px;
+  padding: 20px 5px 8px;
 }
 
 .profile-body h2 {
