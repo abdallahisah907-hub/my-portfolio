@@ -1,14 +1,15 @@
 
 
-  document.getElementById('sendMessageBtn').onclick = function sendMsg() {
+  document.getElementById('sendMessageBtn').addEventListener('click', function() {
     // Your provided code, slightly adapted for a success message
     Swal.fire({
-      title: "Success!",
-      text: "Abdullahi have record your message",
+      title: "Message Sent!",
+      text: "Abdullahi have recieved your message",
       icon: "success",
       draggable: true // Keeps your draggable feature
     });
-  };
+  });
+
 
 
 // 1. Grab the elements
