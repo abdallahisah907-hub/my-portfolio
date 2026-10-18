@@ -1,5 +1,9 @@
 function sendMsg() {
-  window.alert('Your message has been recorded')
+ Swal.fire({
+  title: "Thanks for reaching out to Abdullahi!",
+  icon: "success",
+  draggable: true
+});
 }
 
 // 1. Grab the elements
