@@ -10,7 +10,7 @@ let email = document.querySelector('#email');
 let message = document.querySelector('#message');
     
    Swal.fire({
-  position: "top-center",
+  position: "top",
   icon: "success",
   title: "Abdullahi recieved your message!",
   showConfirmButton: false,
