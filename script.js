@@ -12,7 +12,7 @@ function getMsg(){
 function myFun() {
 let fname = document.getElementById('fname').value.trim();
 let lname = document.getElementById('lname').value.trim();
-let email = document.getElementById('email').value.trim;
+let email = document.getElementById('email').value.trim();
 let message = document.getElementById('message').value;
 
   if(fname != " " && lname != " " && email != " " && message != " "){
@@ -32,24 +32,7 @@ let message = document.getElementById('message').value;
 myFun();
 }
 
-
-  
-  
-
-
-
-    
-    
-
-
-
-
-  
-});
-
     // Your provided code, slightly adapted for a success message
-
-
 
 // 1. Grab the elements
 const toggle = document.querySelector('.menu-toggle');
