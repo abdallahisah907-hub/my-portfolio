@@ -1,7 +1,5 @@
 
 
-
-<script>
   document.getElementById('sendMessageBtn').onclick = function sendMsg() {
     // Your provided code, slightly adapted for a success message
     Swal.fire({
@@ -11,7 +9,7 @@
       draggable: true // Keeps your draggable feature
     });
   };
-</script>
+
 
 // 1. Grab the elements
 const toggle = document.querySelector('.menu-toggle');
