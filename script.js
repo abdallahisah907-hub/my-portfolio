@@ -1,12 +1,21 @@
 let button = document.querySelector('#sendMessageBtn');
 
+function getMsg(){
+  document.getElementById('demo').innerHTML =  Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Something went wrong!",
+  footer: "<a href=\"#\">Why do I have this issue?</a>"
+});
+}
+
 button.addEventListener('click', function myFun() {
 let fname = document.getElementById('fname').value.trim();
 let lname = document.getElementById('lname').value.trim();
 let email = document.getElementById('email').value.trim;
 let message = document.getElementById('message').value;
 
-  if(fname !== " ", && lname !== " ", && email !== " ", && message !== " "){
+  if(fname !== " " && lname !== " " && email !== " " && message !== " "){
     button.addEventListener('click', function() {
     Swal.fire({
     position: "top",
@@ -16,16 +25,11 @@ let message = document.getElementById('message').value;
     timer: 2000
   });
 
-   } else{
-    Swal.fire({
-  icon: "error",
-  title: "Oops...",
-  text: "Something went wrong!",
-  footer: "<a href=\"#\">Why do I have this issue?</a>"
-});
+  } else{
+    getMsg();
    }
   });
-                      
+ getMsg();                     
 }
 
 
