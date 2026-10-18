@@ -9,7 +9,7 @@ button.addEventListener('click', function() {
   timer: 1500
 });
   
-})
+});
 
     // Your provided code, slightly adapted for a success message
 
