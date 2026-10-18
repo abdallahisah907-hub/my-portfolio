@@ -69,7 +69,6 @@
     right: 0;
     flex-direction: column;
     gap: 0;
-    background-color: transparent;
     padding: 0;
     max-height: 0; /* collapsed */
     overflow: hidden;
