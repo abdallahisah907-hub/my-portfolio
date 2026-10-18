@@ -4,7 +4,7 @@ button.addEventListener('click', function() {
 Swal.fire({
   position: "top-center",
   icon: "success",
-  title: "Thanks for reaching out to Abdullahi",
+  title: "Abdullahi recieved your message!",
   showConfirmButton: false,
   timer: 2000
 });
