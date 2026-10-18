@@ -22,7 +22,7 @@
   color: azure;
   position: relative;   
     background:
-    radial-gradient(circle at top left, rgba(59, 100, 246, 0.55), transparent 20%),
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.25), transparent 30%),
     linear-gradient(135deg, var(--bg), #111827 50%, var(--bg-soft));
 }
 .nav-links {
