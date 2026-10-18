@@ -79,6 +79,7 @@
 
   /* Open state (JS toggles this class) */
   .nav-links.open {
+    background-color:black;
     width: 100px;
     max-height:500px;       /* enough for all links */
     padding: 0.5rem 0;
