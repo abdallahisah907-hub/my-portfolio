@@ -2,7 +2,7 @@
 
 
 <script>
-  document.getElementById('demo').onclick = function sendMsg() {
+  document.getElementById('sendMessageBtn').onclick = function sendMsg() {
     // Your provided code, slightly adapted for a success message
     Swal.fire({
       title: "Success!",
