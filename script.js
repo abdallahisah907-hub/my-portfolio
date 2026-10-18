@@ -1,13 +1,11 @@
-let button = document.getElementById('sendMessageBtn');
-
-  button.addEventListener('click', function() {
-        Swal.fire({
-      title: "Message Sent!",
-      text: "Abdullahi have recieved your message",
-      icon: "success",
-      draggable: true // Keeps your draggable feature
-    });
-  })
+let button = document.querySelector('.')
+Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Your work has been saved",
+  showConfirmButton: false,
+  timer: 1500
+});
     // Your provided code, slightly adapted for a success message
 
 
