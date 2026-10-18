@@ -1,14 +1,23 @@
 let button = document.querySelector('#sendMessageBtn');
+let fname = document.querySelector('#fname');
+let lname = document.querySelector('#lname');
+let email = document.querySelector('#email');
+let message = document.querySelector('#message');
 
 
 button.addEventListener('click', function myFun() {
-Swal.fire({
+  if(fname != " ", && lname != " ", && email != " ", && message != " "){
+    Swal.fire({
   position: "top-center",
   icon: "success",
   title: "Abdullahi recieved your message!",
   showConfirmButton: false,
   timer: 2000
 });
+  }else{
+    
+  }
+
   
 });
 
