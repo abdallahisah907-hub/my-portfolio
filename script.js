@@ -9,13 +9,13 @@ function getMsg(){
 });
 }
 
-button.addEventListener('click', function myFun() {
+function myFun() {
 let fname = document.getElementById('fname').value.trim();
 let lname = document.getElementById('lname').value.trim();
 let email = document.getElementById('email').value.trim;
 let message = document.getElementById('message').value;
 
-  if(fname !== " " && lname !== " " && email !== " " && message !== " "){
+  if(fname != " " && lname != " " && email != " " && message != " "){
     button.addEventListener('click', function() {
     Swal.fire({
     position: "top",
@@ -28,8 +28,8 @@ let message = document.getElementById('message').value;
   } else{
     getMsg();
    }
-  });
- getMsg();                     
+  }); 
+myFun();
 }
 
 
