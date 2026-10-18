@@ -1,4 +1,4 @@
-document.getElementById('demo').onclick = function sendMsg() {
+document.getElementById('sub').onclick = function sendMsg() {
   alert('Thanks for reaching out to Abdullahi');
 }
 
