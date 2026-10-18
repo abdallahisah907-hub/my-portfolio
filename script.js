@@ -1,22 +1,31 @@
 let button = document.querySelector('#sendMessageBtn');
+
+
+
+button.addEventListener('click', function myFun() {
+  try{
 let fname = document.querySelector('#fname');
 let lname = document.querySelector('#lname');
 let email = document.querySelector('#email');
 let message = document.querySelector('#message');
-
-
-button.addEventListener('click', function myFun() {
-  if(fname != " ", && lname != " ", && email != " ", && message != " "){
-    Swal.fire({
+    
+   Swal.fire({
   position: "top-center",
   icon: "success",
   title: "Abdullahi recieved your message!",
   showConfirmButton: false,
   timer: 2000
 });
-  }else{
     
+  }catch(error){
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Something went wrong!",
+  footer: "<a href=\"#\">Why do I have this issue?</a>"
+});
   }
+
 
   
 });
