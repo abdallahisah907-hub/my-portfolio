@@ -1,10 +1,17 @@
-function sendMsg() {
- Swal.fire({
-  title: "Thanks for reaching out to Abdullahi!",
-  icon: "success",
-  draggable: true
-});
-}
+
+
+
+<script>
+  document.getElementById('sendMessageBtn').addEventListener('click', function() {
+    // Your provided code, slightly adapted for a success message
+    Swal.fire({
+      title: "Success!",
+      text: "Abdullahi have record your message",
+      icon: "success",
+      draggable: true // Keeps your draggable feature
+    });
+  });
+</script>
 
 // 1. Grab the elements
 const toggle = document.querySelector('.menu-toggle');
