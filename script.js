@@ -2,7 +2,7 @@
 
 
 <script>
-  document.getElementById('sendMessageBtn').addEventListener('click', function() {
+  document.getElementById('demo').onclick = function sendMsg() {
     // Your provided code, slightly adapted for a success message
     Swal.fire({
       title: "Success!",
@@ -10,7 +10,7 @@
       icon: "success",
       draggable: true // Keeps your draggable feature
     });
-  });
+  };
 </script>
 
 // 1. Grab the elements
