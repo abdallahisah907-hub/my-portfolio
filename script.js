@@ -1,4 +1,4 @@
-let button = document.getElementById('submit');
+let button = document.getElementById('sendMessageBtn');
 button.addEventListener("click", () => {
     Swal.fire({
   title: "Your message has been sent!",
