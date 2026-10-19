@@ -5,7 +5,7 @@ button.addEventListener("click", () => {
   icon: "success",
   draggable: true,
   timer:2000,
-  position:top,
+  position:"top"
 });
 });
 
