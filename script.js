@@ -6,7 +6,6 @@ button.addEventListener("click", () => {
   draggable: true,
   timer:2000,
   position:"top",
-  width:10px;
 });
 });
 
