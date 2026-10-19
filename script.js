@@ -1,4 +1,11 @@
-
+let button = document.getElementById('submit');
+button.addEventListener("click", () => {
+    Swal.fire({
+  title: "Your message has been sent!",
+  icon: "success",
+  draggable: true
+});
+});
 
     // Your provided code, slightly adapted for a success message
 
