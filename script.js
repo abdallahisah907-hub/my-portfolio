@@ -3,7 +3,9 @@ button.addEventListener("click", () => {
     Swal.fire({
   title: "Your message has been sent!",
   icon: "success",
-  draggable: true
+  draggable: true,
+  timer:2000,
+  position:top,
 });
 });
 
