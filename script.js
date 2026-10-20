@@ -1,12 +1,35 @@
-let button = document.getElementById('sendMessageBtn');
-button.addEventListener("click", () => {
+function handleErr() {
     Swal.fire({
-  title: "Your message has been sent!",
-  icon: "success",
-  draggable: true,
-  timer:2000,
-  position:"top",
+  title: "Do you want to save the changes?",
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: "Save",
+  denyButtonText: `Don't save`
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) Swal.fire("Saved!", "", "success");
+  else if (result.isDenied) Swal.fire("Changes are not saved", "", "info");
 });
+}
+let fname = document.getElementById('fname').value.trim();
+let lname = document.getElementById('lname').value.trim();
+let email = document.getElementById('email').value.trim();
+
+const button = document.getElementById('sendMessageBtn');
+button.addEventListener("click", () => {
+    if(!fname && lname && email) {
+      handleErr();
+        
+    }
+    Swal.fire({
+      title: "Your message has been sent!",
+      icon: "success",
+      draggable: true,
+      timer:2000,
+      position:"top",
+});
+    
+
 });
 
     // Your provided code, slightly adapted for a success message
