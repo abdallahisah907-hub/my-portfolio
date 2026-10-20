@@ -17,7 +17,7 @@ const navLinks = document.querySelector('navLinks');
 
 toggle.addEventListener('click' () => {
     const isOpen = navLinks.classList.toggle('open');
-    toggle.setAttribute('active', isOpen);
+    toggle.setAttribute('open', isOpen);
 });
 
 
