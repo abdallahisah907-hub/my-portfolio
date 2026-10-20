@@ -17,6 +17,9 @@ let email = document.getElementById('email').value;
 
 const button = document.getElementById('sendMessageBtn');
 button.addEventListener("click", () => {
+    let fname = document.getElementById('fname').value;
+    let lname = document.getElementById('lname').value;
+    let email = document.getElementById('email').value;
     if(!fname && lname && email) {
       handleErr();
         
