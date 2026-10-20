@@ -12,8 +12,8 @@ button.addEventListener("click", () => {
     // Your provided code, slightly adapted for a success message
 
 // 1. Grab the elements
-const toggle = document.querySelector('menu-toggle');
-const navLinks = document.querySelector('navLinks');
+const toggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('#navLinks');
 
 toggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
