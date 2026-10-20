@@ -21,7 +21,7 @@ button.addEventListener("click", () => {
     let lname = document.getElementById('lname').value;
     let email = document.getElementById('email').value;
     if(!fname && lname && email) {
-      handleErr();
+     return handleErr();
         
     }
     Swal.fire({
