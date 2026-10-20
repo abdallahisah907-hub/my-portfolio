@@ -11,9 +11,9 @@ function handleErr() {
   else if (result.isDenied) Swal.fire("Changes are not saved", "", "info");
 });
 }
-let fname = document.getElementById('fname').value.trim();
-let lname = document.getElementById('lname').value.trim();
-let email = document.getElementById('email').value.trim();
+let fname = document.getElementById('fname').value;
+let lname = document.getElementById('lname').value;
+let email = document.getElementById('email').value;
 
 const button = document.getElementById('sendMessageBtn');
 button.addEventListener("click", () => {
