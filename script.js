@@ -1,16 +1,4 @@
-function handleErr() {
-    Swal.fire({
-  title: "Do you want to save the changes?",
-  showDenyButton: true,
-  showCancelButton: true,
-  confirmButtonText: "Save",
-  denyButtonText: `Don't save`
-}).then((result) => {
-  /* Read more about isConfirmed, isDenied below */
-  if (result.isConfirmed) Swal.fire("Saved!", "", "success");
-  else if (result.isDenied) Swal.fire("Changes are not saved", "", "info");
-});
-}
+
 
 const button = document.getElementById('sendMessageBtn');
 button.addEventListener("click", () => {
@@ -18,7 +6,18 @@ button.addEventListener("click", () => {
     let lname = document.getElementById('lname').value;
     let email = document.getElementById('email').value;
     if(!fname && lname && email) {
-     return handleErr();
+         Swal.fire({
+          title: "Do you want to save the changes?",
+          showDenyButton: true,
+          showCancelButton: true,
+          confirmButtonText: "Save",
+          denyButtonText: `Don't save`
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) Swal.fire("Saved!", "", "success");
+          else if (result.isDenied) Swal.fire("Changes are not saved", "", "info");
+        });
+     
         
     }
     Swal.fire({
