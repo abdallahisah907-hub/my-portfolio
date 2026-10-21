@@ -11,9 +11,9 @@ toggle.addEventListener('click', () => {
 
 
     const button = document.getElementById('sendMessageBtn');
-    let fname = document.getElementById('fname').value;
-    let lname = document.getElementById('lname').value;
-    let email = document.getElementById('email').value;
+    let fname = document.getElementById('fname').value.trim();
+    let lname = document.getElementById('lname').value.trim();
+    let email = document.getElementById('email').value.trim();
 button.addEventListener("click", () => {
     if(!fname || !lname || !email) {
          Swal.fire({
