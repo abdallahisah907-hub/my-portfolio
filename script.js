@@ -12,10 +12,10 @@ toggle.addEventListener('click', () => {
 
     const button = document.getElementById('sendMessageBtn');
 button.addEventListener("click", () => {
-      let fname = document.querySelector('#fname').value.trim();
+      let fname = document.querySelector('#fname').value;
       let lname = document.querySelector('#lname').value.trim();
       let email = document.querySelector('#email').value.trim();
-      ifif (fname.trim().length < 0)  {
+      if (fname.trim().length < 0)  {
          Swal.fire({
           title: "Do you want to save the changes?",
           showDenyButton: true,
