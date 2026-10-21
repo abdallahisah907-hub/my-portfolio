@@ -30,7 +30,7 @@ button.addEventListener("click", () => {
      
         
     }
-    Swal.fire({
+    return Swal.fire({
       title: "Your message has been sent!",
       icon: "success",
       draggable: true,
