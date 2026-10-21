@@ -10,12 +10,12 @@ toggle.addEventListener('click', () => {
 });
 
 
-const button = document.getElementById('sendMessageBtn');
-let fname = document.getElementById('fname').value.trim();
-    let lname = document.getElementById('lname').value.trim();
-    let email = document.getElementById('email').value.trim();
+    const button = document.getElementById('sendMessageBtn');
+    let fname = document.getElementById('fname').value;
+    let lname = document.getElementById('lname').value;
+    let email = document.getElementById('email').value;
 button.addEventListener("click", () => {
-    if(fname == " " && lname == " "  && email == " ") {
+    if(fname.trim() == " " && lname.trim() == " "  && email.trim() == " ") {
          Swal.fire({
           title: "Do you want to save the changes?",
           showDenyButton: true,
