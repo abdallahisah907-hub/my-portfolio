@@ -15,7 +15,7 @@ button.addEventListener("click", () => {
       let fname = document.querySelector('#fname').value.trim();
       let lname = document.querySelector('#lname').value.trim();
       let email = document.querySelector('#email').value.trim();
-      if(!fname && !lname && !email) {
+      ifif (fname.trim().length < 0)  {
          Swal.fire({
           title: "Do you want to save the changes?",
           showDenyButton: true,
