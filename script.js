@@ -15,7 +15,7 @@ toggle.addEventListener('click', () => {
     let lname = document.getElementById('lname').value;
     let email = document.getElementById('email').value;
 button.addEventListener("click", () => {
-    if(!fname && !lname && !email) {
+    if(!fname || !lname || !email) {
          Swal.fire({
           title: "Do you want to save the changes?",
           showDenyButton: true,
