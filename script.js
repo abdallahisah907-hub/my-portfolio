@@ -20,9 +20,8 @@ button.addEventListener("click", () => {
       timer:2000,
       position:"top",
 });
-});
     
 
-});
+
 
 
