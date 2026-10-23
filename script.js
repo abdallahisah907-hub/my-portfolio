@@ -11,14 +11,15 @@ toggle.addEventListener('click', () => {
 
 
 
-const button = document.getElementById('sendMessageBtn');
-button.addEventListener('click', () => {
-      Swal.fire({
-      title: "Your message has been sent!",
-      icon: "success",
-      draggable: true,
-      timer:2000,
-      position:"top",
+  const button = document.getElementById('sendMessageBtn');
+  button.addEventListener('click', () => {
+        Swal.fire({
+        title: "Your message has been sent!",
+        icon: "success",
+        draggable: true,
+        timer:2000,
+        position:"top",
+  });
 });
 
 
