@@ -9,8 +9,10 @@ toggle.addEventListener('click', () => {
     toggle.setAttribute('aria-expanded', isOpen);
 });
 
+
+
 const button = document.getElementById('sendMessageBtn');
-button.addEventListener("click", () => {
+button.addEventListener('click', () => {
       Swal.fire({
       title: "Your message has been sent!",
       icon: "success",
