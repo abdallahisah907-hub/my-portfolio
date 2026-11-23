@@ -14,7 +14,7 @@ toggle.addEventListener('click', () => {
   const button = document.getElementById('sendMessageBtn');
   button.addEventListener('click', () => {
     let fname = document.getElementById('fname').value.trim();
-    if(fname.length() ) {
+    if(fname.length == 0) {
       Swal.fire({
       title: "Enter your information!",
       icon: "success",
