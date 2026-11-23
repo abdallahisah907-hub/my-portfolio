@@ -14,7 +14,7 @@ toggle.addEventListener('click', () => {
   const button = document.getElementById('sendMessageBtn');
   button.addEventListener('click', () => {
     let fname = document.getElementById('fname').value.trim();
-    if(fname != " ") {
+    if(fname != " " || lname != " " || email != " ") {
       Swal.fire({
       title: "Drag me!",
       icon: "success",
