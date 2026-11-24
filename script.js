@@ -22,7 +22,7 @@ toggle.addEventListener('click', () => {
 
   });
     }
-    else{
+    
       Swal.fire({
         title: "Your message has been sent Successfully!",
         icon: "success",
@@ -30,8 +30,6 @@ toggle.addEventListener('click', () => {
         timer:2000,
         position:"top"
         });
-      
-    }
 });
 
 
