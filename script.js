@@ -4,6 +4,11 @@
 const toggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('#navLinks');
 
+const form = document.getElementById("myForm");
+form.addEventListener("click", function(event) {
+  event.preventDefault();
+});
+
 toggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     toggle.setAttribute('aria-expanded', isOpen);
@@ -13,8 +18,9 @@ toggle.addEventListener('click', () => {
 
   const button = document.getElementById('sendMessageBtn');
   button.addEventListener('click', () => {
-    let fname = document.getElementById('fname').value.trim();
-    if(fname === " ") {
+    let fname = document.getElementById('fname');
+    const nameValue = fname.value.trim();
+    if(nameValue === " ") {
       Swal.fire({
       title: "Enter your information!",
       icon: "success",
