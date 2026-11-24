@@ -33,7 +33,7 @@ form.addEventListener("submit", function(event) {
         title: "Your message has been sent Successfully!",
         icon: "success",
         draggable: false,
-        timer:2000,
+        timer:5000,
         position:"top"
         });
   window.location.reload();
