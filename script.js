@@ -4,10 +4,7 @@
 const toggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('#navLinks');
 
-const form = document.getElementById("myForm");
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
-});
+
 
 toggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
@@ -16,8 +13,9 @@ toggle.addEventListener('click', () => {
 
 
 
-  const button = document.getElementById('sendMessageBtn');
-  button.addEventListener('click', () => {
+const form = document.getElementById("myForm");
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
     let fname = document.getElementById('fname');
     const nameValue = fname.value.trim();
     if(nameValue === " ") {
