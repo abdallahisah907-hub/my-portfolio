@@ -36,6 +36,7 @@ form.addEventListener("submit", function(event) {
         position:"top"
         });
 });
+location.reload();
 
 
 
