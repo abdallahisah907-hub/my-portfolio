@@ -14,7 +14,15 @@ toggle.addEventListener('click', () => {
   const button = document.getElementById('sendMessageBtn');
   button.addEventListener('click', () => {
     let fname = document.getElementById('fname').value.trim();
-    if(!fname === " ") {
+    if(fname === " ") {
+      Swal.fire({
+      title: "Enter your information!",
+      icon: "success",
+      draggable: true
+
+  });
+    }
+    else{
       Swal.fire({
         title: "Your message has been sent Successfully!",
         icon: "success",
@@ -22,14 +30,7 @@ toggle.addEventListener('click', () => {
         timer:2000,
         position:"top"
         });
-    }
-    else{
-      Swal.fire({
-      title: "Enter your information!",
-      icon: "success",
-      draggable: true
-
-  });
+      
     }
 });
 
