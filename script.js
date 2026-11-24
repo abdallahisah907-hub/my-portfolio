@@ -5,7 +5,7 @@ const toggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('#navLinks');
 
 const form = document.getElementById("myForm");
-form.addEventListener("click", function(event) {
+form.addEventListener("submit", function(event) {
   event.preventDefault();
 });
 
