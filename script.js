@@ -15,7 +15,7 @@ toggle.addEventListener('click', () => {
 
 const form = document.getElementById("myForm");
 form.addEventListener("submit", function(event) {
-  event.default();
+  event.preventDefault();
   
 
     let fname = document.getElementById('fname');
