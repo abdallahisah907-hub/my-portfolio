@@ -18,7 +18,7 @@ toggle.addEventListener('click', () => {
       Swal.fire({
         title: "Your message has been sent!",
         icon: "success",
-        draggable: true,
+        draggable: false,
         timer:2000,
         position:"top",
         });
