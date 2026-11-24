@@ -15,6 +15,7 @@ toggle.addEventListener('click', () => {
 
 const form = document.getElementById("myForm");
 form.addEventListener("submit", function(event) {
+  event.default();
 
     let fname = document.getElementById('fname');
     const nameValue = fname.value.trim();
