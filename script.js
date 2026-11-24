@@ -16,6 +16,7 @@ toggle.addEventListener('click', () => {
 const form = document.getElementById("myForm");
 form.addEventListener("submit", function(event) {
   event.default();
+  location.reload();
 
     let fname = document.getElementById('fname');
     const nameValue = fname.value.trim();
@@ -36,7 +37,7 @@ form.addEventListener("submit", function(event) {
         position:"top"
         });
 });
-location.reload();
+
 
 
 
