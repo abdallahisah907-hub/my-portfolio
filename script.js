@@ -20,16 +20,9 @@ toggle.addEventListener('click', () => {
         icon: "success",
         draggable: false,
         timer:2000,
-        position:"top",
+        position:"top"
         });
-
     }
-      Swal.fire({
-      title: "Enter your information!",
-      icon: "success",
-      draggable: true
-
-  });
 });
 
 
