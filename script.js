@@ -20,27 +20,26 @@ form.addEventListener("submit", function(event) {
 
     let fname = document.getElementById('fname');
     const nameValue = fname.value.trim();
-    if(nameValue !== " ") {
-      
-        Swal.fire({
+    if(nameValue === " ") {
+       handleRequest(Swal.fire({
+    title: "Enter your information!",
+    icon: "fail",
+    draggable: true
+
+  });      
+    } 
+  Swal.fire({
         title: "Your message has been sent Successfully!",
         icon: "success",
         draggable: false,
         timer:5000,
         position:"top"
         });
-
-        
-    }
-    Swal.fire({
-    title: "Enter your information!",
-    icon: "fail",
-    draggable: true
-
-  });
-    
-      
 });
+
+function handleRequest(text) {
+  document.getElementById("demo").innerHTML  = text
+}
 
 
 
