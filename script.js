@@ -64,6 +64,7 @@ toggle.addEventListener('click', () => {
 
     // ---------- Live validation as the user types ----------
     fname.addEventListener('blur', validateUsername);
+    lname.addEventListener('blur', validateUsername);
     email.addEventListener('blur', validateEmail);
     message.addEventListener('blur', validatePassword);
 
