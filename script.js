@@ -19,7 +19,7 @@ toggle.addEventListener('click', () => {
 
     // ---------- Helper: show field-level error ----------
     function setFieldState(input, errorEl, messages) {
-      if (message) {
+      if (messages) {
         input.classList.add('invalid');
         input.classList.remove('valid');
         errorEl.textContent = messages;
@@ -35,7 +35,7 @@ toggle.addEventListener('click', () => {
     // ---------- Individual validators ----------
     function validateUsername() {
       const value = fname.value.trim();
-      const error = document.getElementById('usernameError');
+      const error = document.getElementById('fnameError');
       if (value.length < 3) {
         return setFieldState(lname, error, 'Username must be at least 3 characters.');
       }
