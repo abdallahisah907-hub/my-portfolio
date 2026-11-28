@@ -18,17 +18,17 @@ form.addEventListener("submit", () {
 
   
 
-    let fname = document.getElementById('fname');
-    if(nameValue === " ") {
+    let fname = document.getElementById('fname').value();
+    if(fname.trim() === " ") {
        handleRequest(Swal.fire({
-    title: "Enter your information!",
+    title: "Your message has been sent Successfully!",
     icon: "fail",
     draggable: true
 
   });      
     } 
   Swal.fire({
-        title: "Your message has been sent Successfully!",
+        title: "please provide your information!",
         icon: "success",
         draggable: false,
         timer:5000,
