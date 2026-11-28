@@ -22,7 +22,7 @@ btn.addEventListener("click", ()  => {
     icon: "fail",
     draggable: true
 
-  });      
+  }));      
     } 
   Swal.fire({
         title: "please provide your information!",
