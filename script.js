@@ -14,7 +14,7 @@ toggle.addEventListener('click', () => {
 
 
 const btn = document.getElementById("sendMessageBtn");
-btn.addEventListener("click", () {
+btn.addEventListener("click", ()  => {
 
   
 
