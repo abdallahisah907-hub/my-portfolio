@@ -33,8 +33,18 @@ toggle.addEventListener('click', () => {
     }
 
     // ---------- Individual validators ----------
-    function validateUsername() {
+    function validatefname() {
       const value = fname.value.trim();
+      const error = document.getElementById('fnameError');
+      if (value.length < 3) {
+        return setFieldState(fname, error, 'Username must be at least 3 characters.');
+      }
+      return setFieldState(fname, error, '');
+    }
+
+
+    function validatelname() {
+      const value = lname.value.trim();
       const error = document.getElementById('fnameError');
       if (value.length < 3) {
         return setFieldState(lname, error, 'Username must be at least 3 characters.');
@@ -55,7 +65,7 @@ toggle.addEventListener('click', () => {
 
     function validatePassword() {
       const value = message.value;
-      const error = document.getElementById('passwordError');
+      const error = document.getElementById('messageError');
       if (value.length <= 0) {
         return setFieldState(messages, error, 'please fill type a message before submitting.');
       }
