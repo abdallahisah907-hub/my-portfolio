@@ -34,7 +34,7 @@ form.addEventListener("submit", function(event) {
     }
     Swal.fire({
     title: "Enter your information!",
-    icon: "success",
+    icon: "failed",
     draggable: true
 
   });
