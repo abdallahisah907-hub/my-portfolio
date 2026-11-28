@@ -65,7 +65,7 @@ toggle.addEventListener('click', () => {
 
     function validatePassword() {
       const value = message.value;
-      const error = document.getElementById('messageError');
+      const error = document.getElementById('errorMessage');
       if (value.length <= 0) {
         return setFieldState(messages, error, 'please fill type a message before submitting.');
       }
