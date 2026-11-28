@@ -24,6 +24,7 @@ btn.addEventListener("click", ()  => {
 
   });      
     } 
+  else{
   Swal.fire({
         title: "please provide your information!",
         icon: "success",
@@ -32,10 +33,9 @@ btn.addEventListener("click", ()  => {
         position:"top"
         });
 });
-
-function handleRequest(text) {
-  return text;
 }
+
+
 
 
 
