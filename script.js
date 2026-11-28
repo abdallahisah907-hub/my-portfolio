@@ -17,12 +17,12 @@ const btn = document.getElementById("sendMessageBtn");
 btn.addEventListener("click", ()  => {
     let fname = document.getElementById('fname').value;
     if(fname.trim() === " ") {
-       handleRequest(Swal.fire({
+      Swal.fire({
     title: "Your message has been sent Successfully!",
     icon: "fail",
     draggable: true
 
-  }));      
+  });      
     } 
   Swal.fire({
         title: "please provide your information!",
