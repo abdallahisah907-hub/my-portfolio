@@ -29,12 +29,12 @@ form.addEventListener("submit", function(event) {
         timer:5000,
         position:"top"
         });
-  window.location.reload();
+
         
     }
     Swal.fire({
     title: "Enter your information!",
-    icon: "failed",
+    icon: "fail",
     draggable: true
 
   });
