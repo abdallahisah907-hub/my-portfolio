@@ -16,7 +16,7 @@ toggle.addEventListener('click', () => {
 const btn = document.getElementById("sendMessageBtn");
 btn.addEventListener("click", ()  => {
     let fname = document.getElementById('fname').value;
-    if(fname.trim() === " ") {
+    if(fname === " ") {
       Swal.fire({
     title: "Your message has been sent Successfully!",
     icon: "fail",
