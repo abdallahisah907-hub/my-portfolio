@@ -20,7 +20,7 @@ form.addEventListener("submit", function(event) {
 
     let fname = document.getElementById('fname');
     const nameValue = fname.value.trim();
-    if(nameValue != " ") {
+    if(nameValue !== " ") {
       
         Swal.fire({
         title: "Your message has been sent Successfully!",
