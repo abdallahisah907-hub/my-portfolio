@@ -13,8 +13,8 @@ toggle.addEventListener('click', () => {
 
 
 
-const form = document.getElementById("myForm");
-form.addEventListener("submit", () {
+const btn = document.getElementById("sendMessageBtn");
+btn.addEventListener("submit", () {
 
   
 
