@@ -19,7 +19,7 @@ btn.addEventListener("click", () {
   
 
     let fname = document.getElementById('fname').value;
-    if(fname.trim() === " ") {
+    if(fname.length <= 0) {
        handleRequest(Swal.fire({
     title: "Your message has been sent Successfully!",
     icon: "fail",
