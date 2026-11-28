@@ -14,11 +14,11 @@ toggle.addEventListener('click', () => {
 
 
 const btn = document.getElementById("sendMessageBtn");
-btn.addEventListener("submit", () {
+btn.addEventListener("click", () {
 
   
 
-    let fname = document.getElementById('fname').value();
+    let fname = document.getElementById('fname').value;
     if(fname.trim() === " ") {
        handleRequest(Swal.fire({
     title: "Your message has been sent Successfully!",
@@ -37,7 +37,7 @@ btn.addEventListener("submit", () {
 });
 
 function handleRequest(text) {
-  document.getElementById("demo").innerHTML  = text
+  return text;
 }
 
 
