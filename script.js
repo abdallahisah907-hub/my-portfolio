@@ -20,16 +20,9 @@ form.addEventListener("submit", function(event) {
 
     let fname = document.getElementById('fname');
     const nameValue = fname.value.trim();
-    if(nameValue === " ") {
+    if(!nameValue === " ") {
       Swal.fire({
-      title: "Enter your information!",
-      icon: "success",
-      draggable: true
-
-  });
-    }
-    
-      Swal.fire({
+        Swal.fire({
         title: "Your message has been sent Successfully!",
         icon: "success",
         draggable: false,
@@ -37,6 +30,15 @@ form.addEventListener("submit", function(event) {
         position:"top"
         });
   window.location.reload();
+        
+    }
+  title: "Enter your information!",
+      icon: "success",
+      draggable: true
+
+  });
+    
+      
 });
 
 
