@@ -48,7 +48,7 @@ toggle.addEventListener('click', () => {
       // simple regex — good enough for most forms
       const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!pattern.test(value)) {
-        return setFieldState(email error.style.color="red",, 'Please enter a valid email address.');
+        return setFieldState(email error.style.color="red", 'Please enter a valid email address.');
       }
       return setFieldState(email, error, '');
     }
