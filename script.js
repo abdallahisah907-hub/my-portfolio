@@ -10,45 +10,19 @@ toggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     toggle.setAttribute('aria-expanded', isOpen);
 });
-
-
-
-const btn = document.getElementById("sendMessageBtn");
-btn.addEventListener("click", ()  => {
-    let fname = document.getElementById('fname').value;
-    if(fname === " ") {
-      Swal.fire({
-    title: "Your message has been sent Successfully!",
-    icon: "fail",
-    draggable: true
-
-  });      
-    } 
-  else{
-  Swal.fire({
-        title: "please provide your information!",
-        icon: "success",
-        draggable: false,
-        timer:5000,
-        position:"top"
-        });
-});
-}
-
-  <script>
     // ---------- Grab elements ----------
-    const form        = document.getElementById('signupForm');
-    const username    = document.getElementById('username');
-    const email       = document.getElementById('email');
-    const message   = document.getElementById('password');
+    const form        = document.getElementById('myForm');
+    const fname    = document.getElementById('fname');
+    const lname       = document.getElementById('lname');
+    const message   = document.getElementById('message');
     const formMessage = document.getElementById('formMessage');
 
     // ---------- Helper: show field-level error ----------
-    function setFieldState(input, errorEl, message) {
+    function setFieldState(input, errorEl, messages) {
       if (message) {
         input.classList.add('invalid');
         input.classList.remove('valid');
-        errorEl.textContent = message;
+        errorEl.textContent = messages;
         return false;
       } else {
         input.classList.add('valid');
@@ -60,12 +34,12 @@ btn.addEventListener("click", ()  => {
 
     // ---------- Individual validators ----------
     function validateUsername() {
-      const value = username.value.trim();
+      const value = fname.value.trim();
       const error = document.getElementById('usernameError');
       if (value.length < 3) {
-        return setFieldState(username, error, 'Username must be at least 3 characters.');
+        return setFieldState(lname, error, 'Username must be at least 3 characters.');
       }
-      return setFieldState(username, error, '');
+      return setFieldState(lname, error, '');
     }
 
     function validateEmail() {
@@ -80,18 +54,18 @@ btn.addEventListener("click", ()  => {
     }
 
     function validatePassword() {
-      const value = password.value;
+      const value = message.value;
       const error = document.getElementById('passwordError');
-      if (value.length < 8) {
-        return setFieldState(password, error, 'Password must be at least 8 characters.');
+      if (value.length <= 0) {
+        return setFieldState(messages, error, 'please fill type a message before submitting.');
       }
-      return setFieldState(password, error, '');
+      return setFieldState(messages, error, '');
     }
 
     // ---------- Live validation as the user types ----------
-    username.addEventListener('blur', validateUsername);
+    fname.addEventListener('blur', validateUsername);
     email.addEventListener('blur', validateEmail);
-    password.addEventListener('blur', validatePassword);
+    message.addEventListener('blur', validatePassword);
 
     // ---------- Show a global success or failure message ----------
     function showMessage(text, type) {
@@ -132,7 +106,7 @@ btn.addEventListener("click", ()  => {
         if (firstInvalid) firstInvalid.focus();
       }
     });
-  </script>
+
 
 
 
